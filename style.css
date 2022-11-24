@@ -2,13 +2,13 @@
         background-color: rgb(253, 251, 251);
 }
 
-.lado_esquerdo {
+.lado-esquerdo {
         width: 400px;
         text-align: justify;
         float: left;
 }
 
-.lado_direito {
+.lado-direito {
         float: right;
         width: 400px;
 }
