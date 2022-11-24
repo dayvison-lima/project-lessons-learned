@@ -2,9 +2,15 @@
     background-color: rgb(253, 251, 251);
 }
 
-article{
+.lado_esquerdo{
     width: 400px;
     text-align: justify;
+    float: left;
+}
+
+.lado_direito{
+    float: right;
+    width: 400px;
 }
 
 #cabecalho{
