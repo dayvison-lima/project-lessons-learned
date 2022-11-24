@@ -2,6 +2,11 @@
     background-color: rgb(253, 251, 251);
 }
 
+article{
+    width: 400px;
+    text-align: justify;
+}
+
 #cabecalho{
     position: fixed;
     top: 0;
