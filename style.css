@@ -6,11 +6,25 @@
         width: 400px;
         text-align: justify;
         float: left;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 2em;
+        font-size: medium;
 }
 
 .lado-direito {
         float: right;
         width: 400px;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 2em;
+        font-size: medium;
+        color: rgb(71, 74, 81);
+}
+
+.tabela{
+        margin-top: 70px;
+        padding: 10px;
+        border: 1px dotted black;
+        margin-left: 550px;
 }
 
 #cabecalho {
@@ -20,4 +34,5 @@
 
 #minha_foto {
         width: 300px;
+        border-radius: 100%;
 }
