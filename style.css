@@ -1,23 +1,23 @@
-*{
-    background-color: rgb(253, 251, 251);
+* {
+        background-color: rgb(253, 251, 251);
 }
 
-.lado_esquerdo{
-    width: 400px;
-    text-align: justify;
-    float: left;
+.lado_esquerdo {
+        width: 400px;
+        text-align: justify;
+        float: left;
 }
 
-.lado_direito{
-    float: right;
-    width: 400px;
+.lado_direito {
+        float: right;
+        width: 400px;
 }
 
-#cabecalho{
-    position: fixed;
-    top: 0;
+#cabecalho {
+        position: fixed;
+        top: 0;
 }
 
-#minha_foto{
-    width: 300px;
+#minha_foto {
+        width: 300px;
 }
