@@ -8,70 +8,107 @@
         <title>Document</title>
     </head>
     <body>
-
         <header id="cabecalho">
-            <h1 id="titulo">Lições aprendidas - Trybe!</h1>
+            <div class="header-container">
+                <h1 id="titulo">Lições aprendidas - Trybe!</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#licoes">Lições</a></li>
+                        <li><a href="#aprendizado">Aprendizado</a></li>
+                        <li><a href="#tabela">Tabela</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <br><br><br><br>
-        <img id="minha_foto" src="dayvison.jpg" alt="foto mostrando Dayvison Lima">
-        <br>
-        <a href="https://dayvison-lima.github.io/" target="_blank">Dayvison Lima</a>
+       <main>
+        <div class="body-container">
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <div class="div-sobre-photo-text">
+                    <img id="minha_foto" src="dayvison.jpg" alt="foto mostrando Dayvison Lima">
+                    <p class="sobre-project">
+                        Oi! me chamo Dayvison Lima e este aqui é o primeiro projeto feito na Trybe!
+                    </p>
+                </div>
+            </section>
+            <section id="licoes">
+                <h2>Lições</h2>
+                <section>
+                    <h3>Lições aprendidas</h3>
+                    <div>
+                        <ol id="licoes_aprendidas">
+                            <li>Unix</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Empatia</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Slack</li>
+                            <li>Zoom</li>
+                            <li>Inspect</li>
+                            <li>Semantic HTML</li>
+                        </ol>
+                    </div>
+                </section>
+                <section>
+                    <h3>Lições a aprender</h3>
+                    <div>
+                        <ul id="licoes_a_aprender">
+                            <li>Javascript</li>
+                            <li>DOM</li>
+                            <li>Forms</li>
+                            <li>CSS Responsive</li>
+                            <li>ES6</li>
+                            <li>HOF</li>
+                            <li>Unit Tests</li>
+                            <li>React</li>
+                            <li>Node/li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section id="aprendizado">
+                <h2>Aprendizado pessoal na Trybe</h2>
+                <section>
+                    <article class="lado-esquerdo">
+                        Nesse primeiro módulo está ensinando tudo que precisamos saber para iniciar uma carreira no mundo de desenvolvimento web, virando uma pessoa preparada para os módulos de front-end e back-end! Começamos com Unix e bash, segundo para Git e GitHub, e logo após iniciamos a introdução à HTML semântico e CSS.
+                    </article>            
+                    <aside class="lado-direito">
+                        Olá, sou o Dayvison, pessoa estudante da trybe, e sou natural de Natal! Tenho 29 anos e um gatinho chamado Zé Lúcio.
+                    </aside>
 
-        <ol id="licoes_aprendidas">
-            <li>Unix</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Empatia</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Slack</li>
-            <li>Zoom</li>
-            <li>Inspect</li>
-            <li>Semantic HTML</li>
-        </ol>
+                </section>
 
-        <ul id="licoes_a_aprender">
-            <li>Javascript</li>
-            <li>DOM</li>
-            <li>Forms</li>
-            <li>CSS Responsive</li>
-            <li>ES6</li>
-            <li>HOF</li>
-            <li>Unit Tests/li>
-            <li>React</li>
-            <li>Node/li>
-            <li>SQL</li>
-        </ul>
-
-        <article class="lado-esquerdo">
-            Nesse primeiro módulo está ensinando tudo que precisamos saber para iniciar uma carreira no mundo de desenvolvimento web, virando uma pessoa preparada para os módulos de front-end e back-end! Começamos com Unix e bash, segundo para Git e GitHub, e logo após iniciamos a introdução à HTML semântico e CSS.
-        </article>
-
-        <br>
-
-        <aside class="lado-direito">
-            Olá, sou o Dayvison, pessoa estudante da trybe, e sou natural de Natal! Tenho 29 anos e um gatinho chamado Zé Lúcio.
-        </aside>
-
-        <br>
-
-        <table class="tabela">
-            <tr>
-                <th>Habilidade 1</th>
-                <th>Habilidade 2</th>
-                <th>Habilidade 3</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>CSS</td>
-                <td>Javascript</td>
-            </tr>
-        </table>
-        
-        
-
+            </section>
+            <table id="tabela" class="tabela">
+                <tr>
+                    <th>Habilidade 1</th>
+                    <th>Habilidade 2</th>
+                    <th>Habilidade 3</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>Javascript</td>
+                </tr>
+            </table>
+        </div>
+       </main>
         <footer id="rodape">
-
+            <p>©2022 por <a href="https://www.linkedin.com/in/dayvison-lima/" target="_blank">Dayvison Lima</a></p>
         </footer>
+        <script>
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+        
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
